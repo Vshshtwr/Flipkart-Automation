@@ -1,16 +1,23 @@
 package demo;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import dev.failsafe.internal.util.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class TestCases {
     ChromeDriver driver;
+    
     public TestCases()
     {
         System.out.println("Constructor: TestCases");
-        WebDriverManager.chromedriver().timeout(30).setup();
+       // WebDriverManager.chromedriver().timeout(30).setup();
+       
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
@@ -24,11 +31,11 @@ public class TestCases {
     }
 
     
-    public  void testCase01(){
-        System.out.println("Start Test case: testCase01");
-        driver.get("https://www.google.com");
-        System.out.println("end Test case: testCase02");
-    }
+    public  void testCase01() throws InterruptedException{
 
+    
+       
+    }
+    
 
 }
